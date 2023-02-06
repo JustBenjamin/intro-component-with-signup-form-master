@@ -1,0 +1,161 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./images/bg-intro-mobile.png");
+    background-color: var(--red);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  
+}
+
+    
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.banner {
+    background-color: var(--blue);
+    padding: 0.02rem ;
+    border-radius: 15px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.banner > p > span {
+font-weight: bold;
+}
+
+form {
+    margin: 1.5rem 0;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 0.8rem ;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type=text], [type=email], [type=password] {
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid  rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    outline: none;
+
+}
+
+input[type=text]:focus, [type=email]:focus, [type=password]:focus {
+    border: 2px solid #000;
+    color: #000;
+    
+}
+
+
+input[type=submit] {
+    width: 93%;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--green);
+    box-shadow: 0 4px hsl(154, 59%, 40%); 
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+   background-color: hsl(154, 77%, 63%);
+}
+
+.icon {
+   position: absolute;
+   z-index: 1;
+   margin-left: -12%;
+   margin-top: 5%;  
+   visibility: hidden;
+}
+
+
+
+.error {
+    color: #FF7979;
+    font-style: italic;
+    font-size: x-small;
+    text-align: right;
+    position: relative;
+    left: 20%;
+   
+}
+
+
+small {
+    margin-top: 1rem;
+    color:hsl(246, 25%, 77%);
+    text-align: center;
+}
+
+small > span {
+    color: var(--red);
+    font-weight: 700;
+    }
+
+@media screen and (min-width: 992px) {
+    main {
+        flex-direction: row;
+    }
+
+    .section-a {
+        width: 40%;
+    }
+
+    .text {
+        width: 60%;
+        text-align: left;
+    }
+
+
+    .section-b {
+        width: 40%;
+    }
+    
+
+    input[type=submit] {
+        width: 86%;
+    }
+
+    .icon {
+
+        margin-left: -3%;
+        margin-top: 1%;  
+    
+     }
+
+
+     .error {
+        left: 30%;
+       
+    }
+
+
+
+}
